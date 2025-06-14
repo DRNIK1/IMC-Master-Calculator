@@ -22,6 +22,19 @@ function imcCalculado(){
     else if (imcCurto > 25 && imcCurto < 29.9){
         document.getElementById('resultado').textContent = 'Resultado: ' + seuNome + ' \nseu IMC é cerca de ' + imcCurto + ', significa que está com sobrepeso.';
     }
+
+    else if (imcCurto >= 30 && imcCurto < 35){
+        document.getElementById('resutado').textContent = 'Resultado: ' + seuNome + ' \nseu IMC é cerca de ' + imcCurto + ', significa que está com obesidade grau I.';
+    }
+
+    else if (imcCurto >= 35 && imcCurto < 40){
+        document.getElementById('resultado').textContent = 'Resultado: ' + seuNome + ' \nseu IMC é cerca de ' + imcCurto + ', significa que está com obesidade grau II';
+    }
+
+    else if (imcCurto > 40){
+        document.getElementById('resultado').textContent = 'Resultado: ' + seuNome + ' \nseu IMC é cerca de ' + imcCurto + ', significa que está com obesidade grau III.';
+    }
+    
     else{
         alert('valor incorreto!!!');
     }
